@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    z-index: 8;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+#but {
+    display: none;
+}
+
+#menu span {
+    float: left;
+    font-size: 30px;
+    color: #121212;
+    font-family: 'Potta One', cursive;
+    display: block;
+    padding-block-start: 0.5em;
+    padding-block-end: 0.5em;
+    padding-inline-start: 40px;
+}
+
+#menu span a {
+    color: #121212;
+}
+
+#menu ul {
+    float: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+#menu ul li {
+    float: left;
+    margin-right: 25px;
+}
+
+#menu ul li:first-child {
+    margin-left: 25px;
+}
+
+#menu ul li a {
+    color: #121212;
+    font-size: 25px;
+    display: block;
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+    font-family: 'Staatliches', cursive;
+}
+
+#menu ul li a:hover {
+    text-shadow: 0 0 25px#30475E;
+}
+
+#menu span a:focus {
+    color: #121212;
+}
+
+.Home {
+    overflow: hidden;
+    display: block;
+    margin-top: 74px;
+    position: relative;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 15px 0 60px 0;
+}
+
+.Home h2 {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    color: #F05454;
+    font-family: 'Potta One', cursive;
+}
+
+.Home div {
+    width: 100%;
+}
+
+.Home div a {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    display: block;
+}
+
+.Home div a:hover {
+    background-color: royalblue;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    margin-top: -36px;
+    background-color: #F05454;
+    padding: 50px 0 50px 0;
+}
+
+.images>div {
+    width: 60%;
+    margin: 0 20% 0 20%;
+    overflow: hidden;
+    left: -200%;
+}
+
+.images>div>div {
+    position: relative;
+    width: 400%;
+    left: 0;
+    animation: 12s anim infinite;
+}
+
+@keyframes anim {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.img {
+    border-radius: 10px;
+    float: left;
+    width: 25%;
+}
+
+.About {
+    width: 100%;
+    background-color: #30475E;
+}
+
+.About h4 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px 0 25px 0;
+    margin: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+.About>p {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 25px;
+    font-family: 'Staatliches', cursive;
+    color: #121212;
+    background-color: #F5F5F5;
+    padding: 10px 0 10px 0;
+    text-shadow: 5px 0 5px #30475E;
+}
+
+.About>p:hover {
+    background-color: #F05454;
+    color: #F5F5F5;
+}
+
+.About>div {
+    overflow: hidden;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.align {
+    width: 40%;
+    margin: 0 5% 0 5%;
+    float: left;
+}
+
+p.align {
+    font-size: 25px;
+    font-family: 'Staatliches', cursive;
+    color: #121212;
+    background-color: #F5F5F5;
+    padding: 20px 0 20px 0;
+    text-shadow: 5px 0 10px #30475E;
+}
+
+img.align {
+    padding: 40px;
+    margin: auto 0;
+}
+
+.Cont {
+    width: 100%;
+    height: 40em;
+    padding-top: 5em;
+    background-color: #F05454;
+}
+
+.Cont div {
+    width: 40%;
+    margin-top: 10em;
+    padding-bottom: 25px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.Cont div form input,
+textarea {
+    color: #121212;
+    width: 80%;
+    font-size: 25px;
+    margin: 25px 0 25px 7.5%;
+    border: 0;
+    background-color: #F5F5F5;
+    font-family: 'Staatliches', cursive;
+    padding: 2.5%;
+}
+
+.Cont div h3 {
+    width: 80%;
+    font-size: 25px;
+    margin: 0 0 25px 7.5%;
+    padding-top: 25px;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: #F05454;
+}
+
+.Cont div form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.Cont div form input:last-child {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    color: #121212;
+    background-color: #F05454;
+}
+
+footer {
+    background-color: #F5F5F5;
+}
+
+footer p {
+    font-family: "Staatliches", cursive;
+    text-align: center;
+}
+
+footer div {
+    width: 100%;
+    padding-top: 10px;
+}
+
+footer div ul {
+    position: relative;
+    list-style: none;
+    text-align: left;
+    width: 240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer div ul li {
+    font-size: 25px;
+    float: left;
+    margin: 0 15px 0 15px;
+}
+
+@media only screen and (max-width: 768px)
+/*tablet*/
+
+{
+    #but {
+        display: block;
+        padding-block-start: 0.7em;
+        padding-block-end: 0.7em;
+        font-size: 30px;
+        float: right;
+        margin-right: 25px;
+        color: #121212;
+    }
+    #menu ul {
+        position: absolute;
+        top: 100%;
+        background-color: #30475E;
+        width: 100%;
+        left: -100%;
+        transition: 400ms;
+    }
+    #menu ul li {
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0 !important;
+    }
+    #menu ul li a {
+        text-align: center;
+    }
+    .Cont div {
+        width: 80%;
+        margin-top: 10em;
+        padding-bottom: 25px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .align {
+        width: 90%;
+        float: none;
+    }
+    img.align {
+        padding: 0 5% 25px 5%;
+        margin: 0;
+    }
+    .images>div {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+}
